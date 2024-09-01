@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/KeyboardMouse-Utility/static/css/main.471bc30d.css",
-    "main.js": "/KeyboardMouse-Utility/static/js/main.7bb32c92.js",
+    "main.js": "/KeyboardMouse-Utility/static/js/main.e24c213b.js",
     "static/js/453.6b90a57b.chunk.js": "/KeyboardMouse-Utility/static/js/453.6b90a57b.chunk.js",
     "index.html": "/KeyboardMouse-Utility/index.html",
     "main.471bc30d.css.map": "/KeyboardMouse-Utility/static/css/main.471bc30d.css.map",
-    "main.7bb32c92.js.map": "/KeyboardMouse-Utility/static/js/main.7bb32c92.js.map",
+    "main.e24c213b.js.map": "/KeyboardMouse-Utility/static/js/main.e24c213b.js.map",
     "453.6b90a57b.chunk.js.map": "/KeyboardMouse-Utility/static/js/453.6b90a57b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.471bc30d.css",
-    "static/js/main.7bb32c92.js"
+    "static/js/main.e24c213b.js"
   ]
 }
