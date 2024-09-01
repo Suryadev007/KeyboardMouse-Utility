@@ -1,0 +1,40 @@
+body {
+  background-image: url("https://abstracthdwallpapers.wordpress.com/wp-content/uploads/2012/09/black-background-metal-texture-wallpaper-1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: white;
+  width: 90%;
+}
+.KeyContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(18, 2fr);
+  gap: 8px;
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+}
+.KeyContainer button {
+  height: 4em;
+  width: auto;
+  background-color: black;
+  /* border:2px soild red; */
+}
+.keyUp {
+  background-color: blue !important;
+  color: white !important;
+  filter: grayscale(70%);
+}
+.keyDown {
+  background-color: blue !important;
+  color: white !important;
+}
