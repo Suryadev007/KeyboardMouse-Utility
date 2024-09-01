@@ -1,17 +1,18 @@
 // import logo from "./logo.svg";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import KeyButton from "./components/KeyButton";
 import "./tailwind.css";
-
 function App() {
   useEffect(() => {
     document.addEventListener("keyup", (e) => {
+      e.preventDefault();
       const key = e.code.toUpperCase();
-      console.log(key);
+      // console.log(key);
       document.getElementById(key).classList.add("keyUp");
     });
     document.addEventListener("keydown", (e) => {
+      e.preventDefault();
       const key = e.code.toUpperCase();
       // console.log(key);
       document.getElementById(key).classList.remove("keyUp");
@@ -25,14 +26,14 @@ function App() {
         document.getElementById("MOUSEDOWN").classList.add("keyUp");
       }
     });
-    return () => {
-      document.removeEventListener("keydown", (e) => {
-        // console.log(e.key);
-      });
-      document.removeEventListener("wheel", (event) => {
-        // console.log(event.deltaY);
-      });
-    };
+    // return () => {
+    //   document.removeEventListener("keydown", (e) => {
+    //     // console.log(e.key);
+    //   });
+    //   document.removeEventListener("wheel", (e) => {
+    //     // console.log(event.deltaY);
+    //   });
+    // };
   }, []);
 
   return (
@@ -168,7 +169,7 @@ function App() {
           CustomClass={"col-span-6"}
           keyCode={"SPACE"}
         />
-        <KeyButton keyName="ALT" keyCode={"ALTLEFT"} />
+        <KeyButton keyName="ALT" keyCode={"ALTRIGHT"} />
         <KeyButton keyName="☰" keyCode={"CONTEXTMENU"} />
         <KeyButton
           keyName="CTRL"
